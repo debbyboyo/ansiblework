@@ -15,8 +15,8 @@
       state: started
 
 
-- name: Enable httpd
-  service:
+  - name: Enable httpd
+    service:
       name: httpd
       enabled: yes
 
