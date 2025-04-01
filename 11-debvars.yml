@@ -1,13 +1,12 @@
 ---
-- name: variables Demo
+- name: Variables Demo
   hosts: servers
   become: yes
   vars:
-  myusername: Debilicious
+    myusername: Debilicious
 
   tasks:
     - name: Update static page
       template:
         src: dynamic.j2
         dest: /var/www/html/dynam.html
-...
