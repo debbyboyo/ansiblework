@@ -15,7 +15,7 @@
       service:
         name: httpd
         enabled: yes
-      when: ansible_distribution = "Amazon"
+      when: ansible_distribution = = "Amazon"
 
     - name: Install Apache2 
       apt:
