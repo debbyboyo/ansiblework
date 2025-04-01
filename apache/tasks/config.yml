@@ -1,18 +1,11 @@
+    
 ---
-
-- vars: 
-  myusername: Debilicious
-  
 - name: Update static page
   copy:
-      src: static.html
-      dest: /var/www/html/static.html
+    src: static.html
+    dest: /var/www/html/static.html
 
-
- - name: Update Dynamic page
-      template:
-        src: mydynamic.j2
-        dest: /var/www/html/static.html
-...
-
-    
+- name: Update dynamic page
+  template:
+    src: mydynamic.j2
+    dest: /var/www/html/dynamic.html  # Updated filename
