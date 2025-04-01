@@ -1,0 +1,11 @@
+---
+- name: Deploy Static Page
+  hosts: servers
+  become: yes
+
+  tasks:
+    - name: Update static page
+      copy:
+        src: static.html
+        dest: /var/www/html/static.html
+...
